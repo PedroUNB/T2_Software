@@ -1273,6 +1273,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/bcrypt-nodejs@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@types/bcrypt-nodejs/-/bcrypt-nodejs-0.0.31.tgz#c2912b47e66242f2d0d2c43cdd62918c8f990dac"
+  integrity sha512-0J4tuZnKpVyHc5EIKTeIUIo6yBSjt7F004mifvqGPAQsETho7iHubjyBD8p1YENNWNYb1vfPhgjCsRH8zy84XQ==
+
 "@types/body-parser@*":
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.0.tgz#0685b3c47eb3006ffed117cdd55164b61f80538f"
@@ -1345,7 +1350,7 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@26.x", "@types/jest@^26.0.19":
+"@types/jest@26.x", "@types/jest@^26.0.20":
   version "26.0.20"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.20.tgz#cd2f2702ecf69e86b586e1f5223a60e454056307"
   integrity sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
@@ -1910,6 +1915,11 @@ basic-auth@~2.0.1:
   integrity sha512-NF+epuEdnUYVlGuhaxbbq+dvJttwLnGY+YixlXlME5KpQ5W3CnXA5cVTneY3SPbPDRkcjMbifrwmFYcClgOZeg==
   dependencies:
     safe-buffer "5.1.2"
+
+bcrypt-nodejs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/bcrypt-nodejs/-/bcrypt-nodejs-0.0.3.tgz#c60917f26dc235661566c681061c303c2b28842b"
+  integrity sha1-xgkX8m3CNWYVZsaBBhwwPCsohCs=
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
