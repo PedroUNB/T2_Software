@@ -1,7 +1,5 @@
-import express from 'express';
-
-const app = express();
+import app from '@config/app'
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('Is running')
+  console.log('server up')
 })

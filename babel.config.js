@@ -15,7 +15,8 @@ module.exports = {
       alias: {
         '@models': './src/app/models',
         '@controllers': './src/app/controllers',
-        '@interfaces': './src/app/interfaces'
+        '@interfaces': './src/app/interfaces',
+        '@config': './src/config'
       }
     }]
   ],

@@ -29,6 +29,9 @@
       ],
       "@interfaces/*": [
         "./src/app/interfaces/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
       ]
     }
   },
