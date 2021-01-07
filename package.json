@@ -1,0 +1,8 @@
+{
+  "name": "t2_software_test",
+  "version": "1.0.0",
+  "description": "A simple test for t2 software company",
+  "main": "index.js",
+  "author": "Pedro <pedro.oliveira.unb@gmail.com>",
+  "license": "MIT"
+}
