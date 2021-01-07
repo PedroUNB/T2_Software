@@ -9,7 +9,8 @@ mongoose.connect(
   `mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_HOST}:${MONGO_PORT}/${MONGO_NAME}?authSource=admin`,
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   }
 ).then(() => {
   console.log('[MONGO] Connected!')

@@ -3,6 +3,7 @@ import express, { Application } from 'express'
 import morgan from 'morgan'
 
 import mongoose from '@config/mongodb'
+import UserController from '@controllers/User.controller'
 class App {
   express: Application
 
@@ -25,7 +26,7 @@ class App {
   }
 
   private routes() {
-
+    this.express.use('/', new UserController().router)
   }
 }
 
