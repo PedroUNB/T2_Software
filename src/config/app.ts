@@ -2,6 +2,7 @@ import cors from 'cors'
 import express, { Application } from 'express'
 import morgan from 'morgan'
 
+import mongoose from '@config/mongodb'
 class App {
   express: Application
 
@@ -20,6 +21,7 @@ class App {
   }
 
   private mongo() {
+    return mongoose
   }
 
   private routes() {
