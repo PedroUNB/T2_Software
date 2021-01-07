@@ -44,10 +44,17 @@ class DebitController implements IControllerBase {
       equalsOrError(password, confirmPassword, 'Password do not match!')
 
       const userFromDB = await User.findOne({
-        email
+        $or: [{ email: email }, { cpf: cpf }]
       })
 
-      if (userFromDB) notExistsOrError(userFromDB, 'A user with this email already exists!')
+      if (userFromDB) {
+        if (userFromDB.email === email.toLowerCase()) {
+          notExistsOrError(userFromDB, 'A user with this email already exists!')
+        }
+        if (userFromDB.cpf && userFromDB.cpf === cpf) {
+          notExistsOrError(userFromDB, 'A user with this cpf already exists!')
+        }
+      }
 
       const user = await User.create({
         name,

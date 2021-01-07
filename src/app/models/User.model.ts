@@ -20,7 +20,8 @@ const UserSchema = new mongoose.Schema({
   },
   cpf: {
     type: String,
-    unique: true
+    unique: true,
+    sparse: true
   },
   createdAt: {
     type: Date,
